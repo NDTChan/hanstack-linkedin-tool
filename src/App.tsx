@@ -21,7 +21,7 @@ function App() {
     //     console.log("finally");
     //   });
     const {client_id, redirect_uri, response_type, scope, state} = LinkedInApi;
-    const oauthUrl = `GET https://www.linkedin.com/oauth/v2/authorization?response_type=${response_type}&client_id=${client_id}&redirect_uri=${redirect_uri}&state=${state}&scope=${scope}`;
+    const oauthUrl = `https://www.linkedin.com/oauth/v2/authorization?response_type=${response_type}&client_id=${client_id}&redirect_uri=${redirect_uri}&state=${state}&scope=${scope}`;
     const width = 450,
       height = 730,
       left = window.screen.width / 2 - width / 2,
